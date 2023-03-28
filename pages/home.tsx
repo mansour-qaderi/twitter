@@ -1,12 +1,12 @@
 import { NextPage } from "next";
 import { AppName } from "../components/shared";
+import { Sidebar } from "../components/layout";
 
 const HomePage: NextPage = () => {
   return (
-    <div>
+    <Sidebar>
       <AppName title="Home" />
-      <h2>HomePage</h2>
-    </div>
+    </Sidebar>
   );
 };
 

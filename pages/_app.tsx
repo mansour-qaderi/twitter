@@ -1,13 +1,11 @@
-import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import Head from "next/head";
+import "../styles/globals.css";
+import { AppName } from "../components/shared";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="h-full w-full">
-      <Head>
-        <title>Twitter</title>
-      </Head>
+      <AppName />
       <Component {...pageProps} />
     </div>
   );
