@@ -7,8 +7,9 @@ import {
   NotificationIcon,
   ProfileIcon,
   TwitterIcon,
-} from "../../icons";
-import { Link } from "../custom";
+} from "../../../icons";
+import { Link } from "../../custom";
+import { MenuSidebar } from "./menu";
 
 interface SidebarProps {
   children: React.ReactNode;
@@ -25,27 +26,17 @@ export const Sidebar = ({ children }: SidebarProps) => {
           <TwitterIcon width={32} height={32} />
         </Link>
         <div className="grid items-start gap-4">
-          <Link href="/home">
-            <HomeIcon />
-          </Link>
-          <Link href="#">
-            <ExploreIcon />
-          </Link>
-          <Link href="#">
-            <NotificationIcon />
-          </Link>
-          <Link href="#">
-            <MessageIcon />
-          </Link>
-          <Link href="#">
-            <BookmarkIcon />
-          </Link>
-          <Link href="#">
-            <ProfileIcon />
-          </Link>
-          <Link href="#">
-            <MoreIcon />
-          </Link>
+          <MenuSidebar href="/home" title="Home" icon={<HomeIcon />} />
+          <MenuSidebar href="#" title="Explore" icon={<ExploreIcon />} />
+          <MenuSidebar
+            href="#"
+            title="Notification"
+            icon={<NotificationIcon />}
+          />
+          <MenuSidebar href="#" title="Message" icon={<MessageIcon />} />
+          <MenuSidebar href="#" title="Bookmark" icon={<BookmarkIcon />} />
+          <MenuSidebar href="#" title="Profile" icon={<ProfileIcon />} />
+          <MenuSidebar href="#" title="More" icon={<MoreIcon />} />
         </div>
       </div>
       <main>{children}</main>
