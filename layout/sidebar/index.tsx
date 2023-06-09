@@ -6,9 +6,10 @@ import {
   MoreIcon,
   NotificationIcon,
   ProfileIcon,
+  SearchIcon,
   TwitterIcon,
-} from "../../../icons";
-import { Link } from "../../custom";
+} from "../../icons";
+import { Link } from "../../components/custom";
 import { MenuSidebar } from "./menu";
 
 interface SidebarProps {
@@ -18,16 +19,16 @@ interface SidebarProps {
 export const Sidebar = ({ children }: SidebarProps) => {
   return (
     <div className="flex w-full h-full px-16">
-      <div className="flex flex-col gap-4 justify-self-auto">
+      <div className="flex flex-col justify-self-auto">
         <Link
           href="/home"
           className="w-[50.4px] h-[50.4px] flex justify-center items-center cursor-pointer rounded-full hover:bg-[#e6f6fe]"
         >
           <TwitterIcon width={32} height={32} />
         </Link>
-        <div className="grid items-start gap-4">
+        <div className="grid items-start">
           <MenuSidebar href="/home" title="Home" icon={<HomeIcon />} />
-          <MenuSidebar href="#" title="Explore" icon={<ExploreIcon />} />
+          <MenuSidebar href="#" title="Explore" icon={<SearchIcon />} />
           <MenuSidebar
             href="#"
             title="Notification"
@@ -39,7 +40,7 @@ export const Sidebar = ({ children }: SidebarProps) => {
           <MenuSidebar href="#" title="More" icon={<MoreIcon />} />
         </div>
       </div>
-      <main>{children}</main>
+      <main className="w-full">{children}</main>
     </div>
   );
 };

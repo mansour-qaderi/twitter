@@ -1,12 +1,27 @@
 import { NextPage } from "next";
 import { AppName } from "../components/shared";
-import { Sidebar } from "../components/layout";
+import { PageHeader } from "../layout";
+import { Tabs, Tab } from "../components/shared";
 
 const HomePage: NextPage = () => {
   return (
-    <Sidebar>
+    <PageHeader>
       <AppName title="Home" />
-    </Sidebar>
+      <Tabs>
+        <Tab key="first" name="first">
+          <h2>Tab one</h2>
+        </Tab>
+        <Tab key="second" name="second">
+          <h2>Tab Two</h2>
+        </Tab>
+        <Tab key="third" name="third">
+          <h2>Tab third</h2>
+        </Tab>
+        <Tab key="fourth" name="fourth">
+          <h2>Tab Two</h2>
+        </Tab>
+      </Tabs>
+    </PageHeader>
   );
 };
 
