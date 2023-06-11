@@ -1,12 +1,24 @@
 import { NextPage } from "next";
 import { AppName } from "../components/shared";
-import { Sidebar } from "../components/layout";
+import { PageHeader } from "../layout";
+import { Tabs, Tab } from "../components/shared";
+
+const header = (
+  <Tabs>
+    <Tab name="For You">
+      <h2>Tab one</h2>
+    </Tab>
+    <Tab name="Following">
+      <h2>Tab Two</h2>
+    </Tab>
+  </Tabs>
+);
 
 const HomePage: NextPage = () => {
   return (
-    <Sidebar>
+    <PageHeader header={header}>
       <AppName title="Home" />
-    </Sidebar>
+    </PageHeader>
   );
 };
 
