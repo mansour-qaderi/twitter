@@ -10,7 +10,7 @@ import {
   TwitterIcon,
 } from "../../icons";
 import { Link } from "../../components/custom";
-import { MenuSidebar } from "./menu";
+import { SidebarMenu } from "./menu";
 
 interface SidebarProps {
   children: React.ReactNode;
@@ -27,17 +27,17 @@ export const Sidebar = ({ children }: SidebarProps) => {
           <TwitterIcon width={32} height={32} />
         </Link>
         <div className="grid items-start">
-          <MenuSidebar href="/home" title="Home" icon={<HomeIcon />} />
-          <MenuSidebar href="#" title="Explore" icon={<SearchIcon />} />
-          <MenuSidebar
+          <SidebarMenu href="/home" title="Home" icon={<HomeIcon />} />
+          <SidebarMenu href="#" title="Explore" icon={<SearchIcon />} />
+          <SidebarMenu
             href="#"
             title="Notification"
             icon={<NotificationIcon />}
           />
-          <MenuSidebar href="#" title="Message" icon={<MessageIcon />} />
-          <MenuSidebar href="#" title="Bookmark" icon={<BookmarkIcon />} />
-          <MenuSidebar href="#" title="Profile" icon={<ProfileIcon />} />
-          <MenuSidebar href="#" title="More" icon={<MoreIcon />} />
+          <SidebarMenu href="#" title="Message" icon={<MessageIcon />} />
+          <SidebarMenu href="#" title="Bookmark" icon={<BookmarkIcon />} />
+          <SidebarMenu href="#" title="Profile" icon={<ProfileIcon />} />
+          <SidebarMenu href="#" title="More" icon={<MoreIcon />} />
         </div>
       </div>
       <main className="w-full">{children}</main>
