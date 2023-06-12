@@ -18,9 +18,16 @@ module.exports = {
       octonaryColor: "#b3e5fd",
       nonaryColor: "#cceeff",
       denaryColor: "#e6f7ff",
+      // blue
       blue_primary: "#1d9bf0",
+      // gray
       gray_primary: "#536471",
+      // hover
       hover_primary: "#0f14191a",
+      // window
+      window_primary: "#ffffffd9",
+      // border
+      border_primary: "#eff3f4",
     },
     extend: {},
   },

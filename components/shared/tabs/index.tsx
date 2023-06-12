@@ -27,9 +27,9 @@ export const Tabs = ({ children }: TabsProps) => {
   }, []);
 
   return (
-    <div className="w-full">
-      <div className="text-sm font-medium text-center text-gray-500 dark:text-gray-400 dark:border-gray-700">
-        <ul className="flex flex-wrap w-full justify-between">
+    <>
+      <div className="font-medium text-center text-gray-500 dark:text-gray-400 dark:border-gray-700">
+        <ul className="flex flex-wrap w-full justify-between border-b border-border_primary">
           {tabHeader?.map((item) => {
             const changeTab = () => {
               setActive(item);
@@ -73,7 +73,7 @@ export const Tabs = ({ children }: TabsProps) => {
           return null;
         }
       })}
-    </div>
+    </>
   );
 };
 
