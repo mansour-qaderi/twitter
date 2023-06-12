@@ -16,7 +16,7 @@ const header = (
 
 const HomePage: NextPage = () => {
   return (
-    <PageHeader header={header}>
+    <PageHeader header={header} title="Home">
       <AppName title="Home" />
     </PageHeader>
   );
