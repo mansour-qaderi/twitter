@@ -65,7 +65,7 @@ export const Tabs = ({ children }: TabsProps) => {
       {Object.keys(childContent)?.map((key: any) => {
         if (key === active) {
           return (
-            <div key={key} className="tab-child">
+            <div key={key} className="h-full w-full">
               {childContent?.[key]}
             </div>
           );

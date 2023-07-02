@@ -24,6 +24,9 @@ module.exports = {
       gray_primary: "#536471",
       // hover
       hover_primary: "#0f14191a",
+      hover_secondary: "#e6f6fe",
+      hover_tertiary: "#1d9bf01a",
+      hover_img_gray: "#1a1a1a26",
       // window
       window_primary: "#ffffffd9",
       // border

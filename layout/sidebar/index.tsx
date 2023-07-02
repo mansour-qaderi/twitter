@@ -22,7 +22,7 @@ export const Sidebar = ({ children }: SidebarProps) => {
       <div className="flex flex-col justify-self-auto">
         <Link
           href="/home"
-          className="w-[50.4px] h-[50.4px] flex justify-center items-center cursor-pointer rounded-full hover:bg-[#e6f6fe]"
+          className="w-[50.4px] h-[50.4px] flex justify-center items-center cursor-pointer rounded-full hover:bg-hover_secondary"
         >
           <TwitterIcon width={32} height={32} />
         </Link>
@@ -40,7 +40,7 @@ export const Sidebar = ({ children }: SidebarProps) => {
           <SidebarMenu href="#" title="More" icon={<MoreIcon />} />
         </div>
       </div>
-      <main className="w-full">{children}</main>
+      <main className="w-full h-full">{children}</main>
     </div>
   );
 };

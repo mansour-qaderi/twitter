@@ -9,8 +9,8 @@ interface PageHeaderProps {
 
 export const PageHeader = ({ children, header, title }: PageHeaderProps) => {
   return (
-    <div className="w-full">
-      <div className="w-full bg-window_primary backdrop-blur-md">
+    <div className="w-full h-full">
+      <div className="w-full h-full bg-window_primary backdrop-blur-md">
         {title && (
           <div className="py-3 px-4">
             <Title level={3} className="!font-semibold">

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("./tooltip.css");
 
 html,
 body {
@@ -34,4 +35,13 @@ a {
     color: white;
     background: black;
   }
+}
+
+.textarea:empty::before {
+  content: attr(placeholder);
+  color: grey;
+}
+
+#tweet::placeholder {
+  color: #536471;
 }

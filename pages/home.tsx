@@ -2,14 +2,15 @@ import { NextPage } from "next";
 import { AppName } from "../components/shared";
 import { PageHeader } from "../layout";
 import { Tabs, Tab } from "../components/shared";
+import { Following, AddTweet } from "../components/home";
 
 const header = (
   <Tabs>
     <Tab name="For You">
-      <h2>Tab one</h2>
+      <AddTweet />
     </Tab>
     <Tab name="Following">
-      <h2>Tab Two</h2>
+      <Following />
     </Tab>
   </Tabs>
 );

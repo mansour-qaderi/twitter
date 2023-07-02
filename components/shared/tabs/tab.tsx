@@ -6,5 +6,5 @@ interface TabProps {
 }
 
 export const Tab = ({ children, name }: TabProps) => {
-  return <div>{children}</div>;
+  return <div className="w-full h-full">{children}</div>;
 };
